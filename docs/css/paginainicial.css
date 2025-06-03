@@ -1,4 +1,4 @@
-.titulo{
+.titulo {
     background-color: rgb(64, 64, 73);
     width: 100%;
     color: white;
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-.texto{
+.texto {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
