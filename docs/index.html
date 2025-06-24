@@ -16,5 +16,44 @@
         <a href="https://github.com/marcosqwo"><img src="./../imagens/githubicon.png" alt="" width="30px" height="30px" ></a> 
     </div>
     
+    <input type="text" id="nome"> 
+    <button id="apresentar">dar ola</button>   
+    <select name="select" id="seleciona_cor">
+        <option value="rosa">Rosa</option>
+        <option value="Branco" selected>Branco</option>
+
+    </select>
+
+
+
+
+<script>
+    function trocafundo(event){
+       let x=document.getElementById("seleciona_cor")
+        if(x.value==="rosa"){
+            document.body.style.background="pink";
+        }else{
+            document.body.style.background="white";
+        }
+        
+       
+    }
+    function daroi(event){
+        event.preventDefault();
+        
+       let a=document.getElementById("nome").value;
+       console.log("olá!"+a);
+
+      let paragrafo=document.createElement("p");
+      paragrafo.innerHTML ="ola "+a+"!";
+
+      document.body.appendChild(paragrafo);
+      
+
+    }
+
+    document.getElementById("apresentar").addEventListener('click',daroi);
+    document.getElementById("seleciona_cor").addEventListener('change',trocafundo);
+</script>
 </body>
 </html>
