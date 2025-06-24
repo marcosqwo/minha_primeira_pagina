@@ -23,7 +23,9 @@
         <option value="Branco" selected>Branco</option>
 
     </select>
-
+    <ul id="lista">
+        
+    </ul>
 
 
 
@@ -44,10 +46,13 @@
        let a=document.getElementById("nome").value;
        console.log("olá!"+a);
 
-      let paragrafo=document.createElement("p");
+      let paragrafo=document.createElement("li");
       paragrafo.innerHTML ="ola "+a+"!";
 
-      document.body.appendChild(paragrafo);
+     // document.body.appendChild(paragrafo);
+      
+      let lista=document.getElementById("lista");
+      lista.appendChild(paragrafo);
       
 
     }
